@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            text-align: center;
+        }
+        
+        h3 {
+            font: 3rem 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 100px;
+            display: inline-block;
+            margin: 0;
+        }
+
+        canvas {
+            border: 5px solid orange;
+        }
+
+        button {
+            border-radius: 15px;
+            font: bold 1rem 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 3px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div>
+        <button onclick="controller.start()">START</button>
+        <h3 id="score"></h3>
+        <button onclick="controller.stop()">STOP</button>
+    </div>
+
+
+    <script src="helper.js"></script>
+    <script src="Block.js"></script>
+    <script src="Canvas.js"></script>
+    <script src="Controller.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
